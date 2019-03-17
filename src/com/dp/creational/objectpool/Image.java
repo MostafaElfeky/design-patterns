@@ -1,4 +1,4 @@
-package com.dp.behavioral.objectpool;
+package com.dp.creational.objectpool;
 
 import javafx.geometry.Point2D;
 //Represents our abstract reusable

@@ -1,4 +1,4 @@
-package com.dp.behavioral.objectpool;
+package com.dp.creational.objectpool;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
