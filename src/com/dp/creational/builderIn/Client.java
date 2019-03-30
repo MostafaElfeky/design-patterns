@@ -1,10 +1,10 @@
-package com.dp.creational.builder2;
+package com.dp.creational.builderIn;
 
 import java.time.LocalDate;
 
 import com.dp.creational.builder.Address;
 import com.dp.creational.builder.User;
-import com.dp.creational.builder2.UserDTO.UserDTOBuilder;
+import com.dp.creational.builderIn.UserDTO.UserDTOBuilder;
 
 public class Client {
 
@@ -19,8 +19,12 @@ public class Client {
 	 * This method serves the role of director in builder pattern.
 	 */
 	private static UserDTO directBuild(UserDTOBuilder builder, User user) {
-		return builder.withFirstName(user.getFirstName()).withLastName(user.getLastName())
-				.withBirthday(user.getBirthday()).withAddress(user.getAddress()).build();
+		return builder
+				.withFirstName(user.getFirstName())
+				.withLastName(user.getLastName())
+				.withBirthday(user.getBirthday())
+				.withAddress(user.getAddress())
+				.build();
 	}
 
 	/**
